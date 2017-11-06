@@ -1,15 +1,9 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   root 'posts#index'
   devise_for :users
-=======
   
 
   get 'home/index'
-  root 'home#index'
-
-  
->>>>>>> 98772c16471a5a0934a12c384935fd189ce04dc3
   resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

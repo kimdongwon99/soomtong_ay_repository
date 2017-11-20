@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<a href="/">홈으로 바로 가기</a>
 
-<h1>Listing Posts</h1>
+
+<h1>A yo! finally!</h1>
 
 <table>
 
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.id %></td>
+        <td><%= post.id %></td> 
         <td><%= post.title %></td>
-        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Show', post %></td> 
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -20,11 +20,13 @@
 </table>
 
 <br>
+ <button type="button" class="btn btn-default btn-lg"><%= link_to 'new post', new_post_path %></button></a>
 
-<%= link_to 'New Post', new_post_path %>
 
 <% if current_user.nil? %>
-  <%= link_to 'Sign_in', new_user_session_path %>
+  <button type="button" class="btn btn-default btn-lg"><%= link_to 'Sign_in', new_user_session_path %></button></a>
 <% else %>
-  <%= link_to 'Sign_out', destroy_user_session_path, method: 'delete' %>
+    <button type="button" class="btn btn-default btn-lg"><%= link_to 'Sign_out', destroy_user_session_path, method: 'delete' %></button></a>
 <% end %>
+
+<a href="/"><button type="button" class="btn btn-default btn-lg">Go home</button></a>

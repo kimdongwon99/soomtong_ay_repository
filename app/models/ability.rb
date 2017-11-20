@@ -5,11 +5,11 @@ class Ability
 if user.try(:admin?)
     can :manage, :all
 else
-    can :create, Post
-    can :read, Post
-    can :update, Post do |post|
+    can :read, Post do |post|
       post.user == user
     end
+    can :create, Post
+    can :update, Post
     can :delete, Post do |post|
       post.user == user
   end
@@ -20,7 +20,7 @@ else
   #end
   #can :delete, Comment do |comment|
     #comment.user == user
-  #end
+    end
 end
     # Define abilities for the passed in user here. For example:
     #
@@ -48,5 +48,4 @@ end
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
-  end
 end

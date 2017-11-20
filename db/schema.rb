@@ -11,23 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171106115522) do
 
   create_table "posts", force: :cascade do |t|
     t.integer  "user_id"
-=======
-ActiveRecord::Schema.define(version: 20171106094755) do
-
-  create_table "posts", force: :cascade do |t|
->>>>>>> 98772c16471a5a0934a12c384935fd189ce04dc3
     t.string   "title"
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
   create_table "roles", force: :cascade do |t|
     t.string   "name"
     t.integer  "resource_id"
@@ -65,6 +58,4 @@ ActiveRecord::Schema.define(version: 20171106094755) do
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
 
-=======
->>>>>>> 98772c16471a5a0934a12c384935fd189ce04dc3
 end

@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 
 
+gem 'rails_db'
+gem 'devise' #회원가입 및 회원 관리를 용이하게
+gem 'cancancan', '~> 1.10' 
+gem 'rolify' #역할, 등급을 부여해주는 잼
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record

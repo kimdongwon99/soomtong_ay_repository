@@ -14,6 +14,10 @@
 ActiveRecord::Schema.define(version: 20171106115522) do
 
   create_table "posts", force: :cascade do |t|
+<<<<<<< HEAD
+=======
+    t.integer  "user_id"
+>>>>>>> c8d5ffec427fea9e77ce0feec90fc77dcf391cfe
     t.string   "title"
     t.text     "content"
     t.datetime "created_at", null: false

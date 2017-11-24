@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 gem 'carrierwave'
 gem 'fog'
+gem 'figaro'
 gem 'devise' #회원가입 및 회원 관리를 용이하게
 gem 'devise-bootstrap-views'
 gem 'cancancan', '~> 1.10' 

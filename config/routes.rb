@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   
 
   get 'home/index'
+  
   resources :posts
+  
+  get '/portfolio' => "home#portfolio"
+  get 'home/portfolio'
   
   
   

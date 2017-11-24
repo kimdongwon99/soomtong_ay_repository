@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   
-
+  get 'posts/result'
   get 'home/index'
   resources :posts
   
@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   delete '/posts/:post_id/comments/:id' =>"comments#destroy"
   post '/posts/:post_id/comments/:id' =>"comments#update"
   post '/tinymce_assets' => 'tinymce_assets#create'
-  
   
   
   

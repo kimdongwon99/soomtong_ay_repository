@@ -2,10 +2,9 @@
   <h1>게시판 목록</h1>
   
 <form>
-    <input type="text" name="query"></input>
+    <input type="string" name="query"></input>
     <input type="submit" value="검색"></input>
 </form>
-
   <table class="table">
     <thead>
       <tr>
@@ -16,7 +15,7 @@
     </thead>
   
     <tbody>
-      <% @postss =@posts.reverse %>
+      <% @postss = @posts.reverse %>
       <% @postss.each do |post| %>
         <tr>
           <td><%= link_to post.title , post %></td>

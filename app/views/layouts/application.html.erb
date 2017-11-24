@@ -1,14 +1,299 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<title>LIKELION X HIPHOP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	
+	<%= stylesheet_link_tag 'application', media:'all' %>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text.css"/>
+	
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+  <%= stylesheet_link_tag 'application', media:'all' %>
+
+
+	<!-- Theme skin -->
+	<link href="skins/default.css" rel="stylesheet" />
+
+	<!-- =======================================================
+    Theme Name: Moderna
+    Theme URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+	======================================================= -->
+
 </head>
 <body>
+	<div id="wrapper">
+		<!-- start header -->
+		<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+						<a class="navbar-brand" href="index.html"><span>LIKELION</span> X HIPHOP</a>
+					</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">개발자 소개<b class=" icon-angle-down"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="typography.html">무제</a></li>
+									<li><a href="components.html">무제</a></li>
+									<li><a href="pricingbox.html">무제</a></li>
+								</ul>
+							</li>
+							<li><a href="portfolio.html">힙합 영상 게시판</a></li>
+							<li><a href="blog.html">힙합 블로거</a></li>
+							<li><a href="contact.html"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+		<section id="featured">
+			<!-- start slider -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- Slider -->
+						<div id="main-slider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="test">
+									<img src="img/slides/1.jpg" alt="" />
+									</div>
+									<div class="flex-caption">
+										<h3>힙합정보 플랫폼</h3>
+										<p>멋쟁이사자처럼X힙합</p>
+										<p># 숨통 좀 트자 색히들아 Ay</p>
+									</div>
+								</li>
+								<li>
+									
+									<img src="img/slides/2.jpg" alt="" />
+									<div class="flex-caption">
+										<h3>Hiphop Community</h3>
+										<p>LIKELION X HIPHOP</p>
+										<p># 숨통 좀 트자 색히들아 Ay</p>
+										<p># 멋쟁이사자처럼 강남대학교</p>
+									</div>
+								</li>
+								<li>
+									<img src="img/slides/3.jpg" alt="" />
+									<div class="flex-caption">
+										<h3>VARIABLE HIPHOP</h3>
+										<p># FAST SERACH</p>
+										<p># MANY INFORMATION</p>
+										<p># HIPHOP COMMUNITY</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- end slider -->
+		</section>
+		<section class="callaction">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="big-cta">
+							<div class="cta-text">
+								<img src=img/x1.png>
+								<p>멋쟁이사자처럼X힙합 힙합커뮤니티</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="box">
+									<div class="box-gray aligncenter">
 
-<%= yield %>
+									</div>
+						
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- divider -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="solidline">
+						</div>
+					</div>
+				</div>
+				<!-- end divider -->
+				<!-- Portfolio Projects -->
+				<div class="row">
+					<div class="col-lg-12">
+						<h4 class="heading">Best Hiphop Photo</h4>
+						<div class="row">
+							<section id="projects">
+								<ul id="thumbs" class="portfolio">
+									<!-- Item Project and Filter Name -->
+									<li class="col-lg-3 design" data-id="id-0" data-type="web">
+										<div class="item-thumbs">
+											<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+											<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="First Top Photo" href="img/works/1.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+											<!-- Thumb Image and Description -->
+											<img src="img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+										</div>
+									</li>
+									<!-- End Item Project -->
+									<!-- Item Project and Filter Name -->
+									<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="img/works/2.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+										<!-- Thumb Image and Description -->
+										<img src="img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+									</li>
+									<!-- End Item Project -->
+									<!-- Item Project and Filter Name -->
+									<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="img/works/3.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+										<!-- Thumb Image and Description -->
+										<img src="img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+									</li>
+									<!-- End Item Project -->
+									<!-- Item Project and Filter Name -->
+									<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="img/works/4.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+										<!-- Thumb Image and Description -->
+										<img src="img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+									</li>
+									<!-- End Item Project -->
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="widget">
+							<h5 class="widgetheading">Get in touch with us</h5>
+							<address>
+					<strong>Like Lion</strong><br>
+					 강남대학교 이공관 306호<br>
+					 경기도 용인시 기흥구 강남서로41 </address>
+							<p>
+								<i class="icon-phone"></i> (031) 456-7890 - (010) 9374-7891 <br>
+								<i class="icon-envelope-alt"></i> dongwon@likelion.org
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="widget">
+							<h5 class="widgetheading">Pages</h5>
+							<ul class="link-list">
+								<li><a href="#">features</a></li>
+								<li><a href="#">동영상 올리기</a></li>
+								<li><a href="#">동영상 보기</a></li>
+								<li><a href="#">소개</a></li>
+								<li><a href="#">새끼들아 ay?</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="widget">
+							<h5 class="widgetheading">Latest posts</h5>
+							<ul class="link-list">
+								<li><a href="#">씨잼과 비와이의 라이벌 매치</a></li>
+								<li><a href="#">우원재의 미공개곡 '시차'</a></li>
+								<li><a href="#">숨통좀 틔자 새끼들아 ay?</a></li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			</div>
+			<div id="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="copyright">
+								<p>&copy; kangnam-lion. All right reserved.</p>
+								<div class="credits">
+									<!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Moderna
+                  -->
+									<a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<ul class="social-network">
+								<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+	<!-- javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<%= yield %>
+	<%= javascript_include_tag 'application' %>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/google-code-prettify/prettify.js"></script>
+	<script src="js/portfolio/jquery.quicksand.js"></script>
+	<script src="js/portfolio/setting.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
 
 </body>
 </html>

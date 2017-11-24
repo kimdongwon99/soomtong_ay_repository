@@ -6,10 +6,9 @@
 	<title>LIKELION X HIPHOP</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
-	
-	<%= stylesheet_link_tag 'application', media:'all' %>
-
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text.css"/>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 	
 	<!-- css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -18,8 +17,12 @@
 	<link href="css/flexslider.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 
-  <%= stylesheet_link_tag 'application', media:'all' %>
+  
+	 <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
 
 	<!-- Theme skin -->
 	<link href="skins/default.css" rel="stylesheet" />
@@ -30,6 +33,19 @@
     Author: BootstrapMade
     Author URL: https://bootstrapmade.com
 	======================================================= -->
+  	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/google-code-prettify/prettify.js"></script>
+	<script src="js/portfolio/jquery.quicksand.js"></script>
+	<script src="js/portfolio/setting.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+	
+	
 
 </head>
 <body>
@@ -44,14 +60,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-						<a class="navbar-brand" href="index.html"><span>LIKELION</span> X HIPHOP</a>
+						<a class="navbar-brand" href="/"><span>LIKELION</span> X HIPHOP</a>
 					</div>
 					<div class="navbar-collapse collapse ">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="/">Home</a></li>
+							<li>
+								<a href="/home/portfolio">개발자 소개</a>
 							</li>
-							<li><a href="portfolio">개발자 소개</a></li>
-							<li><a href="portfolio">힙합 영상 게시판</a></li>
+							<li><a href="/posts">힙합 영상 게시판</a></li>
 							<li><a href="blog.html">힙합 블로거</a></li>
 							<li><a href="contact.html"></a></li>
 						</ul>
@@ -141,18 +158,7 @@
 		</footer>
 		
 		</div>
-	<%= javascript_include_tag 'application' %>
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.fancybox.pack.js"></script>
-	<script src="js/jquery.fancybox-media.js"></script>
-	<script src="js/google-code-prettify/prettify.js"></script>
-	<script src="js/portfolio/jquery.quicksand.js"></script>
-	<script src="js/portfolio/setting.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/animate.js"></script>
-	<script src="js/custom.js"></script>
+
 
 </body>
 </html>

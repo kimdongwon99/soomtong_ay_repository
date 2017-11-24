@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap.min.js
 //= require turbolinks
+//= require tinymce
+//= require tinymce-jquery
 //= require_tree .

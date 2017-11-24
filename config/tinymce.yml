@@ -1,0 +1,8 @@
+toolbar: undo redo | forecolor | bold italic | alignleft aligncenter alignright | fontselect | code | link | uploadimage | table | media |
+plugins:
+  - link
+  - uploadimage
+  - textcolor
+  - code
+  - table
+  - media

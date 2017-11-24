@@ -6,11 +6,16 @@ Rails.application.routes.draw do
   
 
   get 'home/index'
-  
   resources :posts
   
   get '/portfolio' => "home#portfolio"
   get 'home/portfolio'
+  
+  post '/posts/:post_id' =>"comments#create"
+  delete '/posts/:post_id/comments/:id' =>"comments#destroy"
+  post '/posts/:post_id/comments/:id' =>"comments#update"
+  post '/tinymce_assets' => 'tinymce_assets#create'
+  
   
   
   

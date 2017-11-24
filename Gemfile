@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
-
-gem 'rails_db'
+gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
+gem 'carrierwave'
+gem 'fog'
 gem 'devise' #회원가입 및 회원 관리를 용이하게
+gem 'devise-bootstrap-views'
 gem 'cancancan', '~> 1.10' 
 gem 'rolify' #역할, 등급을 부여해주는 잼
 
@@ -45,6 +47,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'rails_db'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

@@ -1,12 +1,13 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+  config.scoped_views = true
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '079ab0786b13b1c97c6a11b7fd18f3509e60301aaa9b1b8b80439d9c67650b1fde04ea8cbbdc0ab8c28c23d77f95c141abb88963be9866117850166e833f0518'
+  # config.secret_key = 'f9ed8ac428eb21660e37cb1cd6be048c1a08f20baa36b6e30ae49495a027184e185fcc26b6e9a3e9c1b3422ce860624b5fd8dcee41d3ba5cd8ebe7e2b45b88fb'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -108,7 +109,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '470326395687d693e01be32dd2699a4ef30d48f6c78ea88890ae7291ee63e34a155b809c67e8c44be7b3fb3312d283b65038fb4358b844675ad19335a4a0754a'
+  # config.pepper = '089b2afcc2d48345a5904e94df4c7fe76a9f492a90d4fbf6f338a429e3225fc5d64a87d3b8a1105e2ea1a53525a8ca24d569ea29a5ecb6cfc43334838b39c95c'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -245,7 +246,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting

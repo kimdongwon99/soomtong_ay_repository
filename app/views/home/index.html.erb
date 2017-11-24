@@ -75,6 +75,20 @@
 					</div>
 				</div>
 				<!-- end divider -->
+				
+				<div class="container">
+
+					
+					<% if user_signed_in? %>
+						<p><%= current_user.email %>님 환영합니다.</p>
+						<a href="/users/sign_out">로그아웃</a>
+						<% else %>
+						<p>아직 로그인을 하지 않으셨네요. 로그인을 해주세요~<p>
+						<a href="/users/sign_in">로그인</a>
+					<% end %>
+				</div>
+				
+				
 				<!-- Portfolio Projects -->
 				<div class="row">
 					<div class="col-lg-12">
@@ -86,46 +100,46 @@
 									<li class="col-lg-3 design" data-id="id-0" data-type="web">
 										<div class="item-thumbs">
 											<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-											<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kendrick Lamar, Kendrick Lamar Duckworth" href="img/works/1.jpg">
+											<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="First Top Photo" href="img/works/1.jpg">
 						<span class="overlay-img"></span>
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 											<!-- Thumb Image and Description -->
-											<img src="img/works/1.jpg" alt="Kendrick Lamar Duckworth (born June 17, 1987) is an American rapper and songwriter. Raised in Compton, California, Lamar embarked on his musical career as a teenager under the stage name K-Dot.  ">
+											<img src="img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 										</div>
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
 									<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Swings" href="img/works/2.jpg">
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="img/works/2.jpg">
 						<span class="overlay-img"></span>
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/2.jpg" alt="Moon Ji-hoon (Korean:문지훈, born October 14, 1986), better known by the stage name Swings (Korean:스윙스), is a South Korean rapper. Formerly under the label Brand New Music, he is currently contracted under his own record label, Just Music Entertainment.">
+										<img src="img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
 									<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Dok2" href="img/works/dok.jpg">
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="img/works/3.jpg">
 						<span class="overlay-img"></span>
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/dok.jpg" alt="Lee Joon-Kyung (hangul: 이준경; born March 28, 1990) better known by his stage name Dok2 (hangul: 도끼, pronounced as Dokki), is a South Korean rapper, record producer and co-founder of the Illionaire Records.">
+										<img src="img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
 									<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Zico" href="img/works/4.jpg">
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="img/works/4.jpg">
 						<span class="overlay-img"></span>
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/4.jpg" alt="Woo Ji-ho (Hangul: 우지호; born September 14, 1992), widely known by his stage name, Zico (hangul: 지코), is a South Korean rapper, record producer, singer-songwriter and leader of the boy group Block B, signed under the label KQ Entertainment.">
+										<img src="img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 									</li>
 									<!-- End Item Project -->
 								</ul>

@@ -1,8 +1,19 @@
 source 'https://rubygems.org'
+group :development do
+            
+  # Use Dotenv for environment variables
+gem 'dotenv', '~> 2.2.1'
 
+gem 'omniauth-facebook', '~> 4.0'
+# Use Omniauth Github plugin
+gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
+# Use Omniauth Google plugin
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+# Use ActiveRecord Sessions
+gem 'activerecord-session_store', '~> 1.0'
 
 gem 'rails_db'
-gem 'devise' #회원가입 및 회원 관리를 용이하게
+gem 'devise','~> 4.2' #회원가입 및 회원 관리를 용이하게
 gem 'cancancan', '~> 1.10' 
 gem 'rolify' #역할, 등급을 부여해주는 잼
 
@@ -48,5 +59,5 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  end
 end
-

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171124115820) do
+ActiveRecord::Schema.define(version: 20171124151026) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
@@ -80,5 +80,17 @@ ActiveRecord::Schema.define(version: 20171124115820) do
   end
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
+
+  create_table "videoposts", force: :cascade do |t|
+    t.string   "video_title"
+    t.text     "video_content"
+    t.integer  "hit"
+    t.integer  "user_id"
+    t.string   "image_url",     default: ""
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "videoposts", ["user_id"], name: "index_videoposts_on_user_id"
 
 end

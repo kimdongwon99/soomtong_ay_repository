@@ -16,6 +16,18 @@ Rails.application.routes.draw do
   post '/posts/:post_id/comments/:id' =>"comments#update"
   post '/tinymce_assets' => 'tinymce_assets#create'
   
+
+  get "getdata" => "home#data"
+  post "/data" => "home#data"
+  get "list" =>"home#list"
+  get "many" =>"home#many"
+   get '/update' =>'home#update'
+   get '/update/:update_id' =>'home#update'
+   post '/update_ok/:id' => 'home#update_ok'
+   get '/delete' =>'home#delete'
+   get '/delete/:del_id' =>'home#delete'
+   get '/detail' =>'home#detail'
+   get '/detail/:id' =>"home#detail"
   
   
   

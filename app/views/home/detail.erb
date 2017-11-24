@@ -1,0 +1,9 @@
+<div class="container">
+    <p>제목 : <%=@one_post.video_title%><br></p>
+    <p>내용 : <%=@one_post.video_content%><br></p>
+    <p>조회수 : <%=@one_post.hit%><br></p>
+    <p><a href="/delete/<%=@one_post.id%>">삭제</a><a href="/update/<%=@one_post.id%>">수정</a></p>
+    <div class="container">
+        <video style="width: 360px; height: auto;" src="<%=@one_post.image_url %>" controls>
+    </div>
+</div>

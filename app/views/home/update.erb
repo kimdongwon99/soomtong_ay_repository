@@ -1,0 +1,15 @@
+    <div class="container" >
+        <h1>수정 게시판 </h1>
+        <form action="/update_ok/<%=@one_post.id%>" method="POST">
+            <div class="form-group">
+                <label >제목</label>
+                <input type="text" name="title" class="form-control" id="title" value="<%=@one_post.video_title%>">
+            </div>
+            <div class="form-group">
+              <label for="comment">내용</label>
+              <textarea class="form-control" name="content" rows="5" id="content"><%=@one_post.video_content%></textarea>
+            </div>
+          
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>

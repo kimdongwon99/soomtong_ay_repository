@@ -2,9 +2,9 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   
-  config.omniauth :facebook, ENV['523045851388775'], ENV['a181ebfa47d3ffa6dc5819c95fbbaba7'], scope: 'public_profile,email' 
-  config.omniauth :github, ENV['0a3315b31f9ce0434231'], ENV['e0ab2f6787f7d9afda520299321f62567389873e'], scope: 'user,public_repo'
-  config.omniauth :google_oauth2, ENV['12968097008-jtrl8n3hckdj58hccavnthhkeetm45ig.apps.googleusercontent.com'], ENV['uUO2b56h0Ctk52N0w92l3gnj'], scope: 'userinfo.email,userinfo.profile'
+  config.omniauth :facebook, ENV[''], ENV[''], scope: 'public_profile,email' 
+  config.omniauth :github, ENV[''], ENV[''], scope: 'user,public_repo'
+  config.omniauth :google_oauth2, ENV[''], ENV[''], scope: 'userinfo.email,userinfo.profile'
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.

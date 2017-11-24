@@ -53,6 +53,12 @@ class HomeController < ApplicationController
     # db에 있는 모든값을 출력해 주는 기능
   def list
         @all_post = Videopost.all
+        if params[:query].nil?
+      @all_post = Videopost.all
+       else
+       @all_post = Videopost.where("video_title LIKE ?", "%#{params[:query]}%")
+        end
+
   end
   
   def upload

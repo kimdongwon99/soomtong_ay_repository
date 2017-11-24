@@ -1,6 +1,10 @@
 
     <div class="container">
         <h1>게시판</h1>
+        <form>
+    <input type="string" name="query"></input>
+    <input type="submit" value="검색"></input>
+</form>
          <div >
         <table class="table">
             <% @all_post.each do |p| %>

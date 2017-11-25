@@ -11,6 +11,10 @@ gem 'devise-bootstrap-views'
 gem 'cancancan', '~> 1.10' 
 gem 'rolify' #역할, 등급을 부여해주는 잼
 
+gem 'sqlite3', :group => :development
+gem 'pg',      :group => :production
+gem 'rails_12factor', group: :production
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record

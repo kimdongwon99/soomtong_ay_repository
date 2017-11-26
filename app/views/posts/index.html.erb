@@ -24,7 +24,11 @@
   
   <br>
   
-  <%= link_to '새글작성', new_post_path %>
-  <p><a href="/">홈페이지로</a></p>
+  <% if current_user.nil? %>
+    <div class="col-md-6 col-md-offset-0"><a href="/users/sign_in"><button type="button" class="btn btn-warning">로그인하고 글쓰기 </button></a></div>
+  <%else%>
+    <div class="col-md-6 col-md-offset-0"><a href="/posts/new"><button type="button" class="btn btn-warning">글쓰기</button></a></div>
+  <%end%>
+
 
 </div>

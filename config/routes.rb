@@ -28,14 +28,20 @@ Rails.application.routes.draw do
   post "/data" => "home#data"
   get "list" =>"home#list"
   get "many" =>"home#many"
+   
    get '/update' =>'home#update'
-   get '/update/:update_id' =>'home#update'
-   post '/update_ok/:id' => 'home#update_ok'
+   post '/updateok/:id' => 'home#updateok'
    get '/delete' =>'home#delete'
-   get '/delete/:del_id' =>'home#delete'
+   get '/delete/:del_id' =>'home#delete' , as: "home_delete"
    get '/detail' =>'home#detail'
-   get '/detail/:id' =>"home#detail"
+   get '/detail/:id' =>"home#detail", as: "details"
+   get '/detail/:id/update' => "home#update", as: "home_update"
   
+  post 'home/reply_ok/:id' => 'home#reply_ok'
+  get 'home/reply_del/:id' => 'home#reply_del'
+  get 'home/reply_update' => 'home#reply_update'
+  get 'home/reply_update/:id' => 'home#reply_update'
+  post 'home/reply_update_ok/:id' => 'home#reply_update_ok'
   
   
   # The priority is based upon order of creation: first created -> highest priority.

@@ -25,9 +25,11 @@
 
             <% end %>
         </table>
-        
-        <div class="col-md-6 col-md-offset-0"><a href="/many"><button type="button" class="btn btn-warning">글쓰기</button></a></div>
-        
+        <% if current_user.nil? %>
+            <div class="col-md-6 col-md-offset-0"><a href="/users/sign_in"><button type="button" class="btn btn-warning">로그인하고 글쓰기 </button></a></div>
+        <%else%>
+            <div class="col-md-6 col-md-offset-0"><a href="/many"><button type="button" class="btn btn-warning">글쓰기</button></a></div>
+        <%end%>
         </div>
     
     

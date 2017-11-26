@@ -1,4 +1,5 @@
 <!--글쓰는 곳 -->
+<p hidden>로그인된 아이디 : <%=@email%></p>
 
     <div class="container" >
         <h1>게시판</h1>
@@ -7,6 +8,8 @@
                 <label >제목</label>
                 <input type="text" name="title" class="form-control" id="title" placeholder="제목을 입력하세요">
             </div>
+            <input type="hidden" name="name" class="form-control" id="name" value="<%=@email%>">
+            
             <div class="form-group">
               <label for="comment">내용</label>
               <textarea class="form-control" name="content" rows="5" id="comment"></textarea>

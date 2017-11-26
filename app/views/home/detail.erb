@@ -1,9 +1,55 @@
 <div class="container">
-    <p>제목 : <%=@one_post.video_title%><br></p>
-    <p>내용 : <%=@one_post.video_content%><br></p>
-    <p>조회수 : <%=@one_post.hit%><br></p>
-    <p><a href="/delete/<%=@one_post.id%>">삭제</a><a href="/update/<%=@one_post.id%>">수정</a></p>
-    <div class="container">
-        <video style="width: 360px; height: auto;" src="<%=@one_post.image_url %>" controls>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="jb-cell">
+            <div><video style="width: 400px; height: auto;" src="<%=@one_post.image_url %>" controls></div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="jb-cell">
+            <div>
+                <h2>제목 : <%=@one_post.video_title%></h2>
+                <h3>작성자 : <%=@one_post.user_name%></h3> 
+                <h3>내용 : <%=@one_post.video_content%></h3>
+                <h3>조회수 : <%=@one_post.hit%></h3>
+            
+                
+                <div class="txtbox">
+                    <% if current_user.name == @one_post.user_name %>
+                        <%= link_to '수정', home_update_path(@one_post.id)  %>
+                    <% end %>
+                    <% if current_user.name == @one_post.user_name %>
+                        <%= link_to '삭제', home_delete_path(@one_post.id) ,  data: { confirm: '정말 삭제하시겠습니까?' } %>
+                    <% end %>
+                    <%= link_to '목록', list_path %> 
+                </div>
+            </div>
+            
+            <hr>
+            <!-- 라이브리 시티 설치 코드 -->
+            <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjAxOC84NTgy">
+            	<script type="text/javascript">
+               (function(d, s) {
+                   var j, e = d.getElementsByTagName(s)[0];
+            
+                   if (typeof LivereTower === 'function') { return; }
+            
+                   j = d.createElement(s);
+                   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                   j.async = true;
+            
+                   e.parentNode.insertBefore(j, e);
+               })(document, 'script');
+            	</script>
+            <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+            </div>
+            <!-- 시티 설치 코드 끝 -->
+            
+        
+            
+            </div>
+        </div>
     </div>
 </div>
+

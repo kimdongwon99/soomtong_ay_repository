@@ -2,9 +2,16 @@ class HomeController < ApplicationController
   def index
   end
   
+  def many
+      if user_signed_in?
+        @email = current_user.name
+      end
+  end
+  
   def data
         @one_post = Videopost.new
         @one_post.video_title = params[:title]
+        @one_post.user_name = params[:name]
         #@one_post.user_id = User.find(params[:user_id])
         @one_post.video_content = params[:content]
         @one_post.hit = 0
@@ -23,17 +30,17 @@ class HomeController < ApplicationController
   end
   
   def update 
-        @one_post = Videopost.find(params[:update_id])
+        @one_post = Videopost.find(params[:id])
   end
     
-  def update_ok
+  def updateok
         @one_post = Videopost.find(params[:id])
         @one_post.video_title = params[:title]
         #@one_post.user_id = User.find(params[:user_id])
         @one_post.video_content = params[:content]
         @one_post.save
         
-        redirect_to "/list"
+        redirect_to details_path
         
   end
     
@@ -48,7 +55,11 @@ class HomeController < ApplicationController
         @one_post = Videopost.find(params[:id])
         @one_post.hit +=1
         @one_post.save
+        
+        
   end
+  
+  
     
     # db에 있는 모든값을 출력해 주는 기능
   def list
@@ -69,5 +80,8 @@ class HomeController < ApplicationController
     
     redirect_to "/list"
   end
+  
+  
+  
   
 end

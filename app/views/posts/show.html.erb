@@ -11,10 +11,10 @@
   
   <hr>
   <% if can? :update, @post %>
-      <%= link_to 'Edit', edit_post_path(@post) %> |
+      <%= link_to '수정', edit_post_path(@post) %> |
   <% end %>
   <% if can? :delete, @post %>
-      <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> | 
+      <%= link_to '삭제', @post, method: :delete, data: { confirm: 'Are you sure?' } %> | 
   <% end %>
   <%= link_to '목록으로', posts_path %> 
   
@@ -46,7 +46,7 @@
   <% @comments = @post.comments.all %>
   <% @comments.each do |c| %>
   <div class="well">
-  <p class="original-comment" id="<%=c.id %>">작성자 : <%= c.user.email %></p>
+  <p class="original-comment" id="<%=c.id %>">작성자 : <%= c.user.name %></p>
   <p class="original-comment" id="<%=c.id %>">작성시간 : <%= c.created_at.in_time_zone("Asia/Seoul").strftime("%Y년%m월%d일 %H시%M분") %></p>
   <p class="original-comment" id="<%=c.id %>">내용 : <%= c.comment %></p>
   <div class="edit-comment-<%=c.id%>" style="display:none;">

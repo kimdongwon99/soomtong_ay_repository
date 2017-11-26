@@ -11,6 +11,7 @@
       <tr>
         <th>제목</th>
         <th>작성자</th>
+        <th>Like</th>
         <th>작성시간</th>
       </tr>
     </thead>
@@ -21,6 +22,7 @@
         <tr>
           <td><%= link_to post.title , post %></td>
           <td><%= post.user.name %></td>
+          <td><%= post.likes.size %> 명</td>
           <td><%= post.created_at.in_time_zone("Asia/Seoul").strftime("%Y년%m월%d일 %H시%M분") %></td>
         </tr>
       <% end %>

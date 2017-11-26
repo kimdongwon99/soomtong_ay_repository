@@ -24,7 +24,7 @@ class VideoUploader < CarrierWave::Uploader::Base
 end
 
 class Video
-  mount_uploader :file, VideoUploader
+  mount_uploader :file, VideoUploaders
 
   def set_success(format, opts)
     self.success = true

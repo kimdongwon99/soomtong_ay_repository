@@ -43,14 +43,12 @@ ActiveRecord::Schema.define(version: 20171126024153) do
   add_index "likes", ["user_id"], name: "index_likes_on_user_id"
 
   create_table "posts", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "title"
     t.text     "content"
-    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
   create_table "roles", force: :cascade do |t|
     t.string   "name"

@@ -4,13 +4,19 @@ Rails.application.routes.draw do
 
   devise_for :users
   
-  post 'post/:post_id/like' => 'likes#like_toggle'
+    post 'post/:post_id/like' => 'likes#like_toggle'
     get 'users/sign_out'
+    get 'posts/search' => 'posts#search'
     
     resources :posts, 
     except: [:show] do post "/like", to: "likes#like_toggle" 
     end
 
+  resources :posts do
+    collection do
+      get :search
+    end
+  end
 
   get 'home/index'
   resources :posts

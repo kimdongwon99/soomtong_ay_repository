@@ -10,6 +10,8 @@ gem 'devise' #회원가입 및 회원 관리를 용이하게
 gem 'devise-bootstrap-views'
 gem 'cancancan', '~> 1.10' 
 gem 'rolify' #역할, 등급을 부여해주는 잼
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 group :development do
   gem 'sqlite3'

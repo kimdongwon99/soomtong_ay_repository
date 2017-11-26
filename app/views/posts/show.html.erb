@@ -19,21 +19,21 @@
   <%= link_to '목록으로', posts_path %> 
   
 <p>
-  <strong>Like:</strong>
+  <strong>좋아요:</strong>
   <%= @post.likes.size %> 명이 좋아합니다. 
 </p>
  
 <p>
   <% if current_user.acts_like? (@post) %>
   <form action='/post/<%= @post.id%>/like' method='post'>
-  <button> 좋아요 취소 </button>  
+  <button> 좋아요 </button>  
   </form>
   
   <% else %>
   <form action='/post/<%= @post.id%>/like' method='post'>
-  <button> 좋아요</button>  
+  <button><strong>LIKE!</strong></button>
   </form>
-  
+
   <% end %>
 </p>
 

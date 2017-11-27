@@ -84,5 +84,3 @@ def search
     format.xml  { render :xml => @posts }
   end
 end
-
-

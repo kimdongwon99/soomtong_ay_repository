@@ -53,7 +53,7 @@
 				</div>
 			</div>
 		</section>
-
+		
 		<section id="content">
 			<div class="container">
 				<div class="row">
@@ -77,22 +77,57 @@
 				<!-- end divider -->
 				
 				<div class="container">
-
 					
-					<% if user_signed_in? %>
-						<p><%= current_user.email %>님 환영합니다.</p>
-						<a href="/users/sign_out">로그아웃</a>
+					<!--Pulling Awesome Font -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+				<div class="col-sm-6">
+            <div id="tb-testimonial" class="testimonial testimonial-success">
+                <div class="testimonial-section">
+                	
+                	<% if user_signed_in? %>
+						<p><%= current_user.name %>님 환영합니다.</p>
+						<p><strong>멋쟁이사자처럼X힙합</strong>에 오신것을 환영합니다!</p>
+						<p>다양한 힙합 동영상 제공, 힙합 커뮤니티를 제공합니다!</p><br>
+						 <div class="testimonial-writer-name"><%= current_user.name %></div>
+                    	<div class="testimonial-writer-designation"><%= current_user.email %></div>
+                    	
+                    </a href="#" class="testimonial-writer-company">멋쟁이사자처럼</a>
+						<p><a href="/users/sign_out">로그아웃</a></p>
 						<% else %>
-						<p>아직 로그인을 하지 않으셨네요. 로그인을 해주세요~<p>
-						<a href="/users/sign_in">로그인</a>
+						<p>로그인을 하지 않으시면, 저희 서비스를 이용하실 수 없습니다!</p>
+						<p><strong>멋쟁이사자처럼X힙합</strong>에 오신것을 환영합니다!</p>
+						<p>다양한 힙합 동영상 제공, 힙합 커뮤니티를 제공합니다!</p>
+		<p>	<a href="/users/sign_in">로그인</a></p>
 					<% end %>
 				</div>
+                </div>
+
+                <div class="testimonial-desc">
+				 <%= image_tag "img/works/z1.jpg" %>  
+ 					<div class="testimonial-writer">
+
+
+
+
+                    </div>
+                </div>
+            </div>   
+		</div>
+		<br>
+		<br>
+		
+
+
+					
+					
 				
 				
 				<!-- Portfolio Projects -->
 				<div class="row">
 					<div class="col-lg-12">
-						<h4 class="heading">Best Hiphop Photo</h4>
+						<h4 class="heading">BEST HIPHOP PHOTO</h4>
 						<div class="row">
 							<section id="projects">
 								<ul id="thumbs" class="portfolio">

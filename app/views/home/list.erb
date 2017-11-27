@@ -19,8 +19,6 @@
 </div>
     
     <div class="container">
-            <h1>게시판</h1>
-
          <div >
         <table class="table">
             <% @all_post.each do |p| %>
@@ -42,11 +40,18 @@
 
             <% end %>
         </table>
+        
+        
         <% if current_user.nil? %>
-            <div class="col-md-6 col-md-offset-0"><a href="/users/sign_in"><button type="button" class="btn btn-warning">로그인하고 글쓰기 </button></a></div>
+            <div class="col-md-6 col-md-offset-0"><a href="/users/sign_in"><button type="button" class="flat-butt flat-info-butt">WRITE WITH LOGIN </button></a></div>
         <%else%>
-            <div class="col-md-6 col-md-offset-0"><a href="/many"><button type="button" class="btn btn-warning">글쓰기</button></a></div>
+            <div class="col-md-6 col-md-offset-0"><a href="/many"><button type="button" class="flat-butt flat-info-butt">WRITE!</button></a></div>
         <%end%>
+        <!-- 노가다아아 -->
+        <br><br><br><br><br><br>
+        <!-- 노가다아아 -->
+
+        
         </div>
     
     
